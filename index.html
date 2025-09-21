@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEO ATLAS CARD - Инновационная Финансовая Экосистема</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="card-loader"></div>
+            <p>Загружаем будущее финансов...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>NEO ATLAS CARD</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="#overview" class="nav-link">Обзор</a>
+                <a href="#products" class="nav-link">Продукты</a>
+                <a href="#market" class="nav-link">Рынок</a>
+                <a href="#investment" class="nav-link">Инвестиции</a>
+                <a href="#contact" class="nav-link">Контакты</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-background">
+            <div class="floating-cards">
+                <div class="card-3d card-luxury"></div>
+                <div class="card-3d card-credit"></div>
+                <div class="card-3d card-travel"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">РЕВОЛЮЦИЯ В</span>
+                    <span class="title-line highlight">ФИНАНСОВЫХ</span>
+                    <span class="title-line">ТЕХНОЛОГИЯХ</span>
+                </h1>
+                <p class="hero-description">
+                    Многоуровневая экосистема премиальных карточных продуктов, 
+                    охватывающая весь спектр финансовых потребностей от luxury-сегмента 
+                    до credit-building решений
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="59.2">0</span>
+                        <span class="stat-label">Млн $ привлечено</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Рыночных сегмента</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="400">0</span>
+                        <span class="stat-label">% рост одобрений</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('investment')">
+                        <i class="fas fa-chart-line"></i>
+                        Инвестировать
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('overview')">
+                        <i class="fas fa-play"></i>
+                        Смотреть презентацию
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Market Overview -->
+    <section class="market-overview" id="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Анализ Рынка</h2>
+                <p class="section-subtitle">Глубокое понимание конкурентного ландшафта</p>
+            </div>
+            
+            <div class="market-grid">
+                <div class="market-card" data-aos="fade-up">
+                    <div class="market-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Проблема Рынка</h3>
+                    <p>Путаница в названиях "Atlas Card" создает риски и возможности для консолидации</p>
+                    <div class="market-metric">
+                        <span class="metric-value">3+</span>
+                        <span class="metric-label">Различных продукта</span>
+                    </div>
+                </div>
+
+                <div class="market-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="market-icon">
+                        <i class="fas fa-target"></i>
+                    </div>
+                    <h3>Наше Решение</h3>
+                    <p>Единая экосистема, охватывающая все сегменты от luxury до credit-building</p>
+                    <div class="market-metric">
+                        <span class="metric-value">100%</span>
+                        <span class="metric-label">Покрытие рынка</span>
+                    </div>
+                </div>
+
+                <div class="market-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="market-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Потенциал</h3>
+                    <p>Возможность стать доминирующим брендом в сфере премиальных карточных продуктов</p>
+                    <div class="market-metric">
+                        <span class="metric-value">∞</span>
+                        <span class="metric-label">Возможности роста</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Showcase -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Наша Экосистема</h2>
+                <p class="section-subtitle">Три ключевых продукта для разных сегментов рынка</p>
+            </div>
+
+            <div class="products-container">
+                <!-- Product Tabs -->
+                <div class="product-tabs">
+                    <button class="tab-btn active" data-tab="luxury">Atlas Luxury</button>
+                    <button class="tab-btn" data-tab="credit">Atlas Credit-Builder</button>
+                    <button class="tab-btn" data-tab="travel">Atlas Travel</button>
+                </div>
+
+                <!-- Product Content -->
+                <div class="product-content">
+                    <!-- Luxury Card -->
+                    <div class="product-panel active" id="luxury">
+                        <div class="product-layout">
+                            <div class="product-visual">
+                                <div class="card-showcase luxury-card">
+                                    <div class="card-3d-container">
+                                        <div class="card-face front">
+                                            <div class="card-brand">ATLAS</div>
+                                            <div class="card-chip"></div>
+                                            <div class="card-number">•••• •••• •••• ••••</div>
+                                            <div class="card-holder">PREMIUM MEMBER</div>
+                                            <div class="card-type">LUXURY</div>
+                                        </div>
+                                        <div class="card-face back">
+                                            <div class="card-stripe"></div>
+                                            <div class="card-signature">
+                                                <div class="signature-box"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Atlas Luxury Card</h3>
+                                <p class="product-description">
+                                    Премиальная карта для ультрасостоятельных клиентов с годовой комиссией $1000. 
+                                    Фокус на эксклюзивности и доступе к роскошным услугам.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-crown"></i>
+                                        <span>Только по приглашениям</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-helicopter"></i>
+                                        <span>5x баллов за BLADE услуги</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-utensils"></i>
+                                        <span>VIP бронирование ресторанов</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-plane"></i>
+                                        <span>Доступ в залы ожидания</span>
+                                    </div>
+                                </div>
+                                <div class="product-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">$1000</span>
+                                        <span class="metric-label">Годовая плата</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">21г</span>
+                                        <span class="metric-label">Вес карты</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Credit Builder Card -->
+                    <div class="product-panel" id="credit">
+                        <div class="product-layout">
+                            <div class="product-visual">
+                                <div class="card-showcase credit-card">
+                                    <div class="card-3d-container">
+                                        <div class="card-face front">
+                                            <div class="card-brand">ATLAS</div>
+                                            <div class="card-chip"></div>
+                                            <div class="card-number">•••• •••• •••• ••••</div>
+                                            <div class="card-holder">CREDIT BUILDER</div>
+                                            <div class="card-type">BUILDER</div>
+                                        </div>
+                                        <div class="card-face back">
+                                            <div class="card-stripe"></div>
+                                            <div class="card-signature">
+                                                <div class="signature-box"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Atlas Credit-Builder</h3>
+                                <p class="product-description">
+                                    Инновационный продукт для формирования кредитной истории с 0% годовых 
+                                    и отчетностью во все три кредитных бюро США.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-percentage"></i>
+                                        <span>0% годовых</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-chart-line"></i>
+                                        <span>4x выше уровень одобрения</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>Отчеты в 3 кредитных бюро</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-home"></i>
+                                        <span>Rent Reporting функция</span>
+                                    </div>
+                                </div>
+                                <div class="product-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">$89</span>
+                                        <span class="metric-label">Годовая плата</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">12г</span>
+                                        <span class="metric-label">Вес карты</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Travel Card -->
+                    <div class="product-panel" id="travel">
+                        <div class="product-layout">
+                            <div class="product-visual">
+                                <div class="card-showcase travel-card">
+                                    <div class="card-3d-container">
+                                        <div class="card-face front">
+                                            <div class="card-brand">ATLAS</div>
+                                            <div class="card-chip"></div>
+                                            <div class="card-number">•••• •••• •••• ••••</div>
+                                            <div class="card-holder">TRAVEL REWARDS</div>
+                                            <div class="card-type">TRAVEL</div>
+                                        </div>
+                                        <div class="card-face back">
+                                            <div class="card-stripe"></div>
+                                            <div class="card-signature">
+                                                <div class="signature-box"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h3>Axis Bank Atlas</h3>
+                                <p class="product-description">
+                                    Премиальная туристическая карта для индийского рынка с системой 
+                                    вознаграждений EDGE Miles и многоуровневым членством.
+                                </p>
+                                <div class="product-features">
+                                    <div class="feature-item">
+                                        <i class="fas fa-plane-departure"></i>
+                                        <span>5x миль за путешествия</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-star"></i>
+                                        <span>3-уровневое членство</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-infinity"></i>
+                                        <span>Visa Infinite преимущества</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-hotel"></i>
+                                        <span>Доступ в залы ожидания</span>
+                                    </div>
+                                </div>
+                                <div class="product-metrics">
+                                    <div class="metric">
+                                        <span class="metric-value">₹5000</span>
+                                        <span class="metric-label">Годовая плата</span>
+                                    </div>
+                                    <div class="metric">
+                                        <span class="metric-value">2x</span>
+                                        <span class="metric-label">Базовые мили</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Market Analysis -->
+    <section class="market-analysis" id="market">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Рыночный Анализ</h2>
+                <p class="section-subtitle">Детальная аналитика конкурентного ландшафта</p>
+            </div>
+
+            <div class="analysis-grid">
+                <div class="analysis-card competitive-analysis">
+                    <h3>Конкурентное Позиционирование</h3>
+                    <div class="chart-container">
+                        <canvas id="competitiveChart"></canvas>
+                    </div>
+                    <div class="chart-legend">
+                        <div class="legend-item">
+                            <span class="legend-color luxury"></span>
+                            <span>Luxury Segment</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color credit"></span>
+                            <span>Credit Building</span>
+                        </div>
+                        <div class="legend-item">
+                            <span class="legend-color travel"></span>
+                            <span>Travel Rewards</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analysis-card market-size">
+                    <h3>Размер Рынка</h3>
+                    <div class="market-metrics">
+                        <div class="market-metric-item">
+                            <div class="metric-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="metric-data">
+                                <span class="metric-number">$2.8B</span>
+                                <span class="metric-desc">US Premium Cards Market</span>
+                            </div>
+                        </div>
+                        <div class="market-metric-item">
+                            <div class="metric-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="metric-data">
+                                <span class="metric-number">23%</span>
+                                <span class="metric-desc">Annual Growth Rate</span>
+                            </div>
+                        </div>
+                        <div class="market-metric-item">
+                            <div class="metric-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="metric-data">
+                                <span class="metric-number">45M</span>
+                                <span class="metric-desc">Target Audience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analysis-card risk-assessment">
+                    <h3>Анализ Рисков</h3>
+                    <div class="risk-items">
+                        <div class="risk-item low-risk">
+                            <div class="risk-indicator"></div>
+                            <div class="risk-content">
+                                <h4>Регуляторные риски</h4>
+                                <p>Низкий уровень - FDIC страхование</p>
+                            </div>
+                        </div>
+                        <div class="risk-item medium-risk">
+                            <div class="risk-indicator"></div>
+                            <div class="risk-content">
+                                <h4>Операционные риски</h4>
+                                <p>Средний - требует улучшения сервиса</p>
+                            </div>
+                        </div>
+                        <div class="risk-item high-opportunity">
+                            <div class="risk-indicator"></div>
+                            <div class="risk-content">
+                                <h4>Репутационные возможности</h4>
+                                <p>Высокий потенциал - консолидация бренда</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Opportunity -->
+    <section class="investment" id="investment">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Инвестиционная Возможность</h2>
+                <p class="section-subtitle">Ваш шанс войти в будущее финансовых технологий</p>
+            </div>
+
+            <div class="investment-grid">
+                <div class="investment-card funding-status">
+                    <div class="card-header">
+                        <h3>Текущий Раунд Финансирования</h3>
+                        <div class="funding-badge">Series B</div>
+                    </div>
+                    <div class="funding-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 75%"></div>
+                        </div>
+                        <div class="progress-labels">
+                            <span>$44.4M привлечено</span>
+                            <span>$59.2M цель</span>
+                        </div>
+                    </div>
+                    <div class="funding-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Минимальная инвестиция:</span>
+                            <span class="detail-value">$50,000</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Валюация:</span>
+                            <span class="detail-value">$300M</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Использование средств:</span>
+                            <span class="detail-value">Масштабирование, R&D</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-card financial-projections">
+                    <h3>Финансовые Прогнозы</h3>
+                    <div class="projection-chart">
+                        <canvas id="projectionChart"></canvas>
+                    </div>
+                    <div class="projection-metrics">
+                        <div class="projection-item">
+                            <span class="projection-year">2024</span>
+                            <span class="projection-revenue">$15M</span>
+                        </div>
+                        <div class="projection-item">
+                            <span class="projection-year">2025</span>
+                            <span class="projection-revenue">$45M</span>
+                        </div>
+                        <div class="projection-item">
+                            <span class="projection-year">2026</span>
+                            <span class="projection-revenue">$120M</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="investment-card team-info">
+                    <h3>Команда Основателей</h3>
+                    <div class="team-members">
+                        <div class="team-member">
+                            <div class="member-avatar">PM</div>
+                            <div class="member-info">
+                                <h4>Патрик Мрозовски</h4>
+                                <p>CEO & Co-founder</p>
+                                <span>Ex-Goldman Sachs</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">KP</div>
+                            <div class="member-info">
+                                <h4>Кенан Пулак</h4>
+                                <p>CTO & Co-founder</p>
+                                <span>Ex-Google</span>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="member-avatar">SP</div>
+                            <div class="member-info">
+                                <h4>Сид Парихар</h4>
+                                <p>CPO & Co-founder</p>
+                                <span>Ex-Apple</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="investment-cta">
+                <button class="btn btn-investment" onclick="openInvestmentModal()">
+                    <i class="fas fa-handshake"></i>
+                    Стать Инвестором
+                </button>
+                <button class="btn btn-secondary" onclick="downloadPitchDeck()">
+                    <i class="fas fa-download"></i>
+                    Скачать Pitch Deck
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Свяжитесь с Нами</h2>
+                    <p>Готовы обсудить инвестиционные возможности или партнерство?</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>investors@neoatlascard.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>San Francisco, CA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Компания">
+                        </div>
+                        <div class="form-group">
+                            <select name="interest">
+                                <option>Выберите область интереса</option>
+                                <option>Инвестиции</option>
+                                <option>Партнерство</option>
+                                <option>Лицензирование</option>
+                                <option>Другое</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Сообщение" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Отправить
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NEO ATLAS CARD</h3>
+                    <p>Революционная финансовая экосистема будущего</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Продукты</h4>
+                    <ul>
+                        <li><a href="#luxury">Atlas Luxury</a></li>
+                        <li><a href="#credit">Atlas Credit-Builder</a></li>
+                        <li><a href="#travel">Atlas Travel</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Инвесторам</h4>
+                    <ul>
+                        <li><a href="#investment">Возможности</a></li>
+                        <li><a href="#market">Аналитика</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Следите за нами</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-medium"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NEO ATLAS CARD. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Investment Modal -->
+    <div id="investmentModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Инвестиционная Заявка</h2>
+            <form id="investmentForm">
+                <div class="form-group">
+                    <label>Полное имя</label>
+                    <input type="text" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Размер инвестиции</label>
+                    <select name="investmentSize" required>
+                        <option>$50,000 - $100,000</option>
+                        <option>$100,000 - $500,000</option>
+                        <option>$500,000 - $1,000,000</option>
+                        <option>$1,000,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Статус инвестора</label>
+                    <select name="investorType" required>
+                        <option>Частный инвестор</option>
+                        <option>Венчурный фонд</option>
+                        <option>Корпоративный инвестор</option>
+                        <option>Институциональный инвестор</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Подать заявку</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
